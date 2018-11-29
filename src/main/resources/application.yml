@@ -1,0 +1,10 @@
+# https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+spring:
+  application:
+    name: client
+
+server:
+  port: 9091
+  servlet:
+    contextPath: /greetingclientserver
