@@ -8,3 +8,10 @@ server:
   port: 9091
   servlet:
     contextPath: /greetingclientserver
+    
+say-hello-server:
+  ribbon:
+    eureka:
+      enabled: false # Ribbon normally get their server lists from a Netflix Eureka service registry
+    listOfServers: localhost:8090,localhost:8091
+    ServerListRefreshInterval: 15000 # milliseconds
